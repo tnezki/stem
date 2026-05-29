@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>STEM II ES3-II Assessment Plan</title>
+<style>
+/* ======================= RESET / PAGE ======================= */
+@page { size: letter; margin: 0.45in; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.45;
+  color: #222;
+  background: #fff;
+  font-size: 11pt;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.container { max-width: 980px; margin: 0 auto; }
+.page-break { page-break-before: always; break-before: page; }
+.unbreakable, .assessment-card, .outline-card, .rubric-card, .ladder-table, .progress-tracker { break-inside: avoid; page-break-inside: avoid; }
+
+/* ======================= HEADER / TITLES ======================= */
+h1 { color: #00003d; font-size: 26pt; line-height: 1.1; margin-bottom: 8px; }
+h2 { color: #00003d; font-size: 17pt; margin: 18px 0 10px 0; border-left: 6px solid #00003d; padding-left: 10px; }
+h3 { color: #004d99; font-size: 13pt; margin: 12px 0 6px 0; }
+p { margin: 6px 0; }
+ul, ol { margin: 6px 0 8px 28px; }
+li { margin-bottom: 4px; }
+.small-note { font-size: 9.5pt; color: #555; font-style: italic; }
+
+/* ======================= OUTLINE CARDS ======================= */
+.outline-card {
+  border: 1px solid #9aa9bd;
+  border-left: 7px solid #00003d;
+  padding: 12px 14px;
+  margin: 12px 0;
+  background: #fff;
+}
+.outline-card-title { color: #00003d; font-weight: 800; font-size: 13.5pt; margin-bottom: 4px; }
+.essential-standard { font-size: 12pt; border: 2px solid #00003d; padding: 12px 14px; margin: 12px 0 16px 0; background: #f8fbff; }
+.challenge-list { color:#333; font-size:10.5pt; margin-top: 5px; }
+.challenge-list strong { color:#00003d; }
+
+/* ======================= TABLES ======================= */
+table { border-collapse: collapse; width: 100%; margin: 10px 0 14px 0; }
+th, td { border: 1px solid #777; padding: 7px 8px; vertical-align: top; }
+th { background: #eaf1fb; color: #00003d; font-weight: 800; text-align: left; }
+.ladder-table th { background: #00003d; color: #fff; }
+.ladder-table .dok4 { background: #eef4ff; }
+.ladder-table .dok3 { background: #f6fbff; }
+.ladder-table .dok2 { background: #fffdf2; }
+.ladder-table .dok1 { background: #ffffff; }
+
+/* ======================= PROGRESS TRACKING ======================= */
+.progress-tracker { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin: 12px 0 18px 0; }
+.progress-box { border: 1px solid #777; padding: 12px; min-height: 0.8in; }
+.progress-box strong { color: #00003d; }
+
+/* ======================= DOK SECTIONS ======================= */
+.dok-bar {
+  background: #000;
+  color: #fff;
+  font-weight: 900;
+  font-size: 15pt;
+  padding: 9px 12px;
+  margin: 22px 0 12px 0;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+.dok-method-card { border: 1px solid #777; padding: 12px 14px; margin: 10px 0 16px 0; background: #fff; break-inside: avoid; page-break-inside: avoid; }
+.assessment-ideas { margin-left: 24px; }
+.assessment-ideas a { color: #005aa0; font-weight: 800; text-decoration: underline; }
+.timing-label { display: inline-block; background: #fff7cf; border: 1px solid #d1c27a; border-radius: 4px; padding: 1px 6px; font-weight: 800; color: #4a3f17; margin-left: 6px; }
+.what-tells { border-left: 5px solid #777; padding-left: 10px; margin-top: 10px; color: #333; }
+
+/* ======================= SUMMATIVE / RUBRIC ======================= */
+.summative-card { border: 2px solid #00003d; padding: 12px 14px; margin: 14px 0; background: #f8fbff; break-inside: avoid; page-break-inside: avoid; }
+.rubric-card { border: 1px solid #777; padding: 12px 14px; margin: 10px 0; }
+.rubric-level { color: #00003d; font-weight: 900; font-size: 12.5pt; }
+
+/* ======================= PRINT CONTROL ======================= */
+@media print {
+  body { font-size: 10.5pt; }
+  h1 { font-size: 24pt; }
+  h2 { font-size: 16pt; }
+  .assessment-card { padding: 10px 12px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<!-- ======================= ES3-II OUTLINE START ======================= -->
+<h1>STEM II – ES3-II: Build, Test, and Analyze Prototypes</h1>
+<h2>Essential Standard</h2>
+<div class="essential-standard">Students will construct prototypes, collect and analyze performance data, and evaluate design effectiveness in order to determine how well a design meets the challenge goals and what evidence should guide future decisions.</div>
+
+<section class="outline-card">
+<div class="outline-card-title">Learning Target 1: Constructing Functional Prototypes</div>
+<p><strong>Learning Target: Students will build prototypes that follow design plans, meet challenge requirements, use materials effectively, and remain testable under the conditions of the challenge.</strong></p>
+<p class="challenge-list"><strong>Challenge Connections:</strong> Bridge, Glider, Earthquake Tower, MagLev Vehicle, Landing Rover, Water Rocket Distance</p>
+<ul>
+<li>I can construct a prototype that matches the selected design plan and challenge requirements.</li>
+<li>I can use materials, tools, and class time effectively during the build process.</li>
+<li>I can make construction decisions that improve stability, reliability, safety, or performance.</li>
+<li>I can identify build problems that prevent a prototype from being tested fairly.</li>
+<li>I can document important construction choices so another person can understand how the prototype was built.</li>
+</ul>
+</section>
+
+<section class="outline-card">
+<div class="outline-card-title">Learning Target 2: Collecting Performance Data</div>
+<p><strong>Learning Target: Students will develop and follow testing procedures, collect accurate measurements, and record observations that describe how a prototype performs.</strong></p>
+<p class="challenge-list"><strong>Challenge Connections:</strong> Bridge, Glider, Earthquake Tower, MagLev Vehicle, Landing Rover, Water Rocket Distance</p>
+<ul>
+<li>I can follow a testing procedure that matches the scoring system and challenge goals.</li>
+<li>I can collect accurate quantitative data such as distance, time, mass, height, load, cost, speed, momentum, or number of successful trials.</li>
+<li>I can record qualitative observations about stability, consistency, failure points, control, protection, or reliability.</li>
+<li>I can conduct multiple trials when needed to improve the usefulness of the data.</li>
+<li>I can identify variables that may affect the fairness or reliability of a test.</li>
+</ul>
+</section>
+
+<section class="outline-card">
+<div class="outline-card-title">Learning Target 3: Analyzing Prototype Performance</div>
+<p><strong>Learning Target: Students will interpret testing results, identify patterns, evaluate strengths and weaknesses, and use evidence to explain how well a prototype meets the design criteria.</strong></p>
+<p class="challenge-list"><strong>Challenge Connections:</strong> Bridge, Glider, Earthquake Tower, MagLev Vehicle, Landing Rover, Water Rocket Distance, Design Your Own Challenge</p>
+<ul>
+<li>I can organize test results in a way that makes performance easy to interpret.</li>
+<li>I can identify patterns, outliers, strengths, weaknesses, and failure points in testing data.</li>
+<li>I can compare expected performance with actual results and explain important differences.</li>
+<li>I can use data and observations to evaluate whether a prototype meets the challenge criteria.</li>
+<li>I can explain prototype performance using evidence, scientific principles, and engineering reasoning.</li>
+</ul>
+</section>
+<!-- ======================= ES3-II OUTLINE END ======================= -->
+
+<!-- ======================= LEARNING LADDER START ======================= -->
+<h2>Learning Ladder</h2>
+<table class="ladder-table">
+<tr><th>Rung</th><th>I Can Statement</th><th>DOK</th></tr>
+<tr class="dok4"><td>8</td><td>I can independently design a fair testing plan, collect meaningful data, analyze performance, and defend conclusions for an unfamiliar engineering challenge.</td><td>DOK 4</td></tr>
+<tr class="dok4"><td>7</td><td>I can evaluate the quality of a testing process, critique the evidence collected, and recommend stronger ways to measure prototype performance.</td><td>DOK 4</td></tr>
+<tr class="dok3"><td>6</td><td>I can explain prototype performance by connecting data, observations, design features, and scientific principles.</td><td>DOK 3</td></tr>
+<tr class="dok3"><td>5</td><td>I can analyze testing results to identify patterns, strengths, weaknesses, and likely causes of success or failure.</td><td>DOK 3</td></tr>
+<tr class="dok2"><td>4</td><td>I can organize and interpret performance data to determine how well a prototype meets the challenge goals.</td><td>DOK 2</td></tr>
+<tr class="dok2"><td>3</td><td>I can collect accurate measurements and observations during prototype testing.</td><td>DOK 2</td></tr>
+<tr class="dok1"><td>2</td><td>I can identify what should be measured or observed during a prototype test.</td><td>DOK 1</td></tr>
+<tr class="dok1"><td>1</td><td>I can recognize that prototypes must be tested to determine whether they work.</td><td>DOK 1</td></tr>
+</table>
+<!-- ======================= LEARNING LADDER END ======================= -->
+
+<!-- ======================= PROGRESS TRACKING START ======================= -->
+<h2>Progress Tracking</h2>
+<div class="progress-tracker">
+<div class="progress-box"><strong>Not Yet:</strong> I need support building a testable prototype or identifying what data should be collected.</div>
+<div class="progress-box"><strong>Getting There:</strong> I can build and test a prototype but need more practice collecting reliable data and explaining what the results mean.</div>
+<div class="progress-box"><strong>Got It!:</strong> I can build, test, organize data, and explain prototype performance using evidence.</div>
+</div>
+<!-- ======================= PROGRESS TRACKING END ======================= -->
+
+<!-- ======================= ASSESSMENT METHODS START ======================= -->
+<h2>Assessment Methods by DOK Level</h2>
+
+<div class="dok-bar">DOK 1 — Rungs 1–2</div>
+<section class="dok-method-card">
+<p><strong>Format: 3–5 minute warm-up, quick check, test-plan prompt, image prompt, build-readiness check, or exit ticket</strong></p>
+<p><strong>Purpose:</strong> Check whether students can recognize the purpose of testing, identify what should be measured, and connect basic performance evidence to challenge goals.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es3-ii/es3-ii-dok1-1.html">Prototype Testing Purpose Check</a> <span class="timing-label">Can Be Assessed During Any Major Challenge</span> – Students explain why a prototype must be tested before design claims can be made.</li>
+<li><a href="formative/es3-ii/es3-ii-dok1-2.html">Measurement Match</a> <span class="timing-label">Can Be Assessed During Glider or MagLev</span> – Students match challenge goals to measurements such as distance, time, speed, momentum, mass, or successful trials.</li>
+<li><a href="formative/es3-ii/es3-ii-dok1-3.html">Build Readiness Checklist</a> <span class="timing-label">Can Be Assessed Before Initial Testing</span> – Students identify whether a prototype is complete, safe, stable, and ready for a fair test.</li>
+<li><a href="formative/es3-ii/es3-ii-dok1-4.html">Observation or Measurement Sort</a> <span class="timing-label">Can Be Assessed During Bridge, Landing Rover, or Earthquake Tower</span> – Students sort evidence into quantitative measurements and qualitative observations.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>Students who struggle here may see testing as a competition only rather than a way to gather evidence. They may need support identifying measurable outcomes, distinguishing observations from data, or understanding why test conditions must be clear.</div>
+</section>
+
+<div class="dok-bar">DOK 2 — Rungs 3–4</div>
+<section class="dok-method-card">
+<p><strong>Format: Exit ticket, data table task, testing checklist, partner check, graph or table interpretation, or short written response</strong></p>
+<p><strong>Purpose:</strong> Check whether students can collect, organize, and interpret basic performance data from prototype tests.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es3-ii/es3-ii-dok2-1.html">Bridge Efficiency Data Table</a> <span class="timing-label">Can Be Assessed During Bridge</span> – Students record cost, load supported, and efficiency data, then describe what the results show about performance.</li>
+<li><a href="formative/es3-ii/es3-ii-dok2-2.html">Glider Flight Trial Analysis</a> <span class="timing-label">Can Be Assessed During Glider</span> – Students organize distance, time, stability, and landing data from multiple trials to identify the strongest performance.</li>
+<li><a href="formative/es3-ii/es3-ii-dok2-3.html">Earthquake Tower Test Results</a> <span class="timing-label">Can Be Assessed During Earthquake Tower</span> – Students interpret testing phases, number of floors, budget data, and survival results to evaluate prototype success.</li>
+<li><a href="formative/es3-ii/es3-ii-dok2-4.html">Landing Rover Drop Test Data</a> <span class="timing-label">Can Be Assessed During Landing Rover</span> – Students organize drop results, egg survival, cost, and failure observations to determine whether the rover meets the challenge criteria.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>Students at this level can usually run tests, but the assessment reveals whether their data is accurate, organized, and connected to the challenge goals. Weak responses often include missing units, incomplete trials, unclear observations, or conclusions that do not match the data.</div>
+</section>
+
+<div class="dok-bar">DOK 3 — Rungs 5–6</div>
+<section class="dok-method-card">
+<p><strong>Format: Constructed response, data analysis paragraph, failure-point analysis, graph explanation, CER-style response, or group whiteboard defense</strong></p>
+<p><strong>Purpose:</strong> Check whether students can analyze testing evidence and explain why a prototype performed the way it did.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es3-ii/es3-ii-dok3-1.html">Prototype Performance CER</a> <span class="timing-label">Can Be Assessed During Any Major Challenge</span> – Students make a claim about how well a prototype performed and support it with test data and reasoning.</li>
+<li><a href="formative/es3-ii/es3-ii-dok3-2.html">Structural Failure Point Analysis</a> <span class="timing-label">Can Be Assessed During Bridge or Earthquake Tower</span> – Students identify the first major failure point and explain what design feature likely caused it.</li>
+<li><a href="formative/es3-ii/es3-ii-dok3-3.html">Expected vs. Actual Results</a> <span class="timing-label">Can Be Assessed During Glider, MagLev, or Water Rocket Distance</span> – Students compare predicted performance with actual data and explain why the results may have differed.</li>
+<li><a href="formative/es3-ii/es3-ii-dok3-4.html">Data Pattern Explanation</a> <span class="timing-label">Can Be Assessed During Landing Rover or MagLev</span> – Students identify a pattern across trials and explain how a design feature, variable, or test condition may have produced it.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>This level shows whether students can move from “what happened” to “why it happened.” Strong evidence includes specific data, clear cause-and-effect reasoning, and accurate connections between design features and performance outcomes.</div>
+</section>
+
+<div class="dok-bar">DOK 4 — Rungs 7–8</div>
+<section class="dok-method-card">
+<p><strong>Format: Performance task, testing plan design, critique of an investigation, unfamiliar data scenario, engineering test report, or capstone testing protocol</strong></p>
+<p><strong>Purpose:</strong> Check whether students can transfer ES3 skills by designing or critiquing testing systems and defending conclusions from evidence.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es3-ii/es3-ii-dok4-1.html">Design a Fair Testing Plan</a> <span class="timing-label">Can Be Assessed Before Design Your Own Challenge</span> – Students design a testing procedure for an unfamiliar challenge, including variables, measurements, trials, and success criteria.</li>
+<li><a href="formative/es3-ii/es3-ii-dok4-2.html">Critique a Flawed Test</a> <span class="timing-label">Can Be Assessed After Multiple Major Challenges</span> – Students identify problems in a testing setup and explain how the flaws could make the results unreliable.</li>
+<li><a href="formative/es3-ii/es3-ii-dok4-3.html">Engineering Test Report Mini-Task</a> <span class="timing-label">Can Be Assessed During Bridge, Glider, or Landing Rover</span> – Students summarize procedure, data, analysis, conclusion, limitations, and next-step recommendations in a short technical format.</li>
+<li><a href="formative/es3-ii/es3-ii-dok4-4.html">Capstone Testing Protocol</a> <span class="timing-label">Can Be Assessed During Design Your Own Challenge</span> – Students create the scoring system and testing protocol for their self-designed challenge and justify why the evidence will measure success fairly.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>DOK 4 tasks show whether students can think beyond a teacher-provided test. Strong students can design fair tests, recognize limitations, defend evidence quality, and explain how data should drive engineering conclusions.</div>
+</section>
+<!-- ======================= ASSESSMENT METHODS END ======================= -->
+
+<!-- ======================= SUMMATIVE PLAN START ======================= -->
+<h2>Summative Assessment Plan</h2>
+<section class="summative-card">
+<p><strong>Summative Evidence for ES3-II:</strong> Students demonstrate proficiency by producing an engineering artifact that shows how a prototype was built, how it was tested, what data was collected, how the results were analyzed, and what the evidence reveals about design effectiveness.</p>
+<p><strong>Recommended Artifact Options:</strong></p>
+<ul>
+<li><strong>Engineering Test Report:</strong> A technical report documenting test procedure, data, observations, analysis, conclusions, and limitations.</li>
+<li><strong>Data Dashboard:</strong> A visual artifact using tables, graphs, trial summaries, and performance notes to communicate prototype results.</li>
+<li><strong>Testing Analysis Poster:</strong> A poster explaining the test setup, key results, design strengths, weaknesses, and evidence-based conclusions.</li>
+<li><strong>Demonstration Video:</strong> A recorded test demonstration with narration explaining how the prototype works, what was measured, and what the results show.</li>
+<li><strong>Engineering Journal Article:</strong> A written artifact that tells the story of the prototype test cycle using evidence, analysis, and technical explanation.</li>
+<li><strong>Prototype Performance Report:</strong> A concise artifact focused on performance metrics, reliability, failure points, and recommendations based on data.</li>
+</ul>
+<p><strong>Challenge Examples:</strong> Bridge Efficiency Test Report, Glider Flight Analysis Data Dashboard, Earthquake Tower Testing Analysis Poster, MagLev Momentum Performance Report, Landing Rover Drop Test Report, Water Rocket Distance Trial Data Report, or Design Your Own Challenge Testing Protocol.</p>
+<p><strong>Suggested Rubric Categories:</strong> prototype functionality, testing procedure, accuracy and completeness of data, use of multiple trials, organization of results, interpretation of evidence, analysis of strengths and weaknesses, explanation of performance, and clarity of technical communication.</p>
+</section>
+<!-- ======================= SUMMATIVE PLAN END ======================= -->
+
+<!-- ======================= HOLISTIC RUBRIC START ======================= -->
+<h2>Holistic Rubric</h2>
+<section class="rubric-card"><div class="rubric-level">A — Highly Proficient</div><p>The student constructs a functional prototype, collects accurate and meaningful data, analyzes results with clear evidence, and explains performance using engineering reasoning and scientific principles. The artifact is organized, specific, and shows strong understanding of fair testing, reliability, limitations, and evidence-based conclusions.</p></section>
+<section class="rubric-card"><div class="rubric-level">B — Proficient</div><p>The student constructs a testable prototype, collects relevant data, organizes results, and explains how the evidence shows design effectiveness. The artifact is mostly complete and clear. Some analysis may lack depth, but conclusions are supported by data and connected to the challenge goals.</p></section>
+<section class="rubric-card"><div class="rubric-level">C — Developing Proficiency</div><p>The student shows partial understanding of building, testing, and analysis. The prototype may be testable and some data may be collected, but records may be incomplete, analysis may be basic, or conclusions may not fully connect to evidence. There is enough evidence that the student understands testing as part of the engineering process.</p></section>
+<section class="rubric-card"><div class="rubric-level">Not Yet — Insufficient Evidence</div><p>The student does not yet provide sufficient evidence of ES3-II proficiency. The artifact may lack a functional prototype, clear testing procedure, reliable data, meaningful analysis, or evidence-based conclusions. The student may need reteaching, guided testing support, data organization practice, or reassessment.</p></section>
+<!-- ======================= HOLISTIC RUBRIC END ======================= -->
+
+</div>
+</body>
+</html>
