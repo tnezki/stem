@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>STEM II ES1-II Assessment Plan</title>
+<style>
+/* ======================= RESET / PAGE ======================= */
+@page { size: letter; margin: 0.45in; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.45;
+  color: #222;
+  background: #fff;
+  font-size: 11pt;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.container { max-width: 980px; margin: 0 auto; }
+.page-break { page-break-before: always; break-before: page; }
+.unbreakable, .assessment-card, .outline-card, .rubric-card, .ladder-table, .progress-tracker { break-inside: avoid; page-break-inside: avoid; }
+
+/* ======================= HEADER / TITLES ======================= */
+h1 { color: #00003d; font-size: 26pt; line-height: 1.1; margin-bottom: 8px; }
+h2 { color: #00003d; font-size: 17pt; margin: 18px 0 10px 0; border-left: 6px solid #00003d; padding-left: 10px; }
+h3 { color: #004d99; font-size: 13pt; margin: 12px 0 6px 0; }
+p { margin: 6px 0; }
+ul, ol { margin: 6px 0 8px 28px; }
+li { margin-bottom: 4px; }
+.small-note { font-size: 9.5pt; color: #555; font-style: italic; }
+
+/* ======================= OUTLINE CARDS ======================= */
+.outline-card {
+  border: 1px solid #9aa9bd;
+  border-left: 7px solid #00003d;
+  padding: 12px 14px;
+  margin: 12px 0;
+  background: #fff;
+}
+.outline-card-title { color: #00003d; font-weight: 800; font-size: 13.5pt; margin-bottom: 4px; }
+.essential-standard { font-size: 12pt; border: 2px solid #00003d; padding: 12px 14px; margin: 12px 0 16px 0; background: #f8fbff; }
+.challenge-list { color:#333; font-size:10.5pt; margin-top: 5px; }
+.challenge-list strong { color:#00003d; }
+
+/* ======================= TABLES ======================= */
+table { border-collapse: collapse; width: 100%; margin: 10px 0 14px 0; }
+th, td { border: 1px solid #777; padding: 7px 8px; vertical-align: top; }
+th { background: #eaf1fb; color: #00003d; font-weight: 800; text-align: left; }
+.ladder-table th { background: #00003d; color: #fff; }
+.ladder-table .dok4 { background: #eef4ff; }
+.ladder-table .dok3 { background: #f6fbff; }
+.ladder-table .dok2 { background: #fffdf2; }
+.ladder-table .dok1 { background: #ffffff; }
+
+/* ======================= PROGRESS TRACKING ======================= */
+.progress-tracker { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin: 12px 0 18px 0; }
+.progress-box { border: 1px solid #777; padding: 12px; min-height: 0.8in; }
+.progress-box strong { color: #00003d; }
+
+/* ======================= DOK SECTIONS ======================= */
+.dok-bar {
+  background: #000;
+  color: #fff;
+  font-weight: 900;
+  font-size: 15pt;
+  padding: 9px 12px;
+  margin: 22px 0 12px 0;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+.dok-method-card { border: 1px solid #777; padding: 12px 14px; margin: 10px 0 16px 0; background: #fff; break-inside: avoid; page-break-inside: avoid; }
+.assessment-ideas { margin-left: 24px; }
+.assessment-ideas a { color: #005aa0; font-weight: 800; text-decoration: underline; }
+.timing-label { display: inline-block; background: #fff7cf; border: 1px solid #d1c27a; border-radius: 4px; padding: 1px 6px; font-weight: 800; color: #4a3f17; margin-left: 6px; }
+.what-tells { border-left: 5px solid #777; padding-left: 10px; margin-top: 10px; color: #333; }
+
+/* ======================= SUMMATIVE / RUBRIC ======================= */
+.summative-card { border: 2px solid #00003d; padding: 12px 14px; margin: 14px 0; background: #f8fbff; break-inside: avoid; page-break-inside: avoid; }
+.rubric-card { border: 1px solid #777; padding: 12px 14px; margin: 10px 0; }
+.rubric-level { color: #00003d; font-weight: 900; font-size: 12.5pt; }
+
+/* ======================= PRINT CONTROL ======================= */
+@media print {
+  body { font-size: 10.5pt; }
+  h1 { font-size: 24pt; }
+  h2 { font-size: 16pt; }
+  .assessment-card { padding: 10px 12px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<!-- ======================= ES1-II OUTLINE START ======================= -->
+<h1>STEM II – ES1-II: Define Engineering Problems and Constraints</h1>
+<h2>Essential Standard</h2>
+<div class="essential-standard">Students will analyze engineering problems, identify criteria and constraints, conduct research, and establish measures of success in order to understand what a successful engineering solution must accomplish before designing, building, testing, and improving a prototype.</div>
+
+<section class="outline-card">
+<div class="outline-card-title">Learning Target 1: Understanding Engineering Problems</div>
+<p><strong>Learning Target: Students will interpret engineering challenges by identifying the problem, purpose, users, goals, and real-world context that shape design decisions.</strong></p>
+<p class="challenge-list"><strong>Challenge Connections:</strong> Bridge, Glider, Earthquake Tower, MagLev Vehicle, Landing Rover, Water Rocket Distance, Design Your Own Challenge</p>
+<ul>
+<li>I can identify the engineering problem that must be solved in a challenge.</li>
+<li>I can explain the purpose of a design challenge in my own words.</li>
+<li>I can identify users, stakeholders, or real-world situations connected to the problem.</li>
+<li>I can explain why the problem matters and what a successful solution should accomplish.</li>
+<li>I can use the challenge description to determine what information is most important before designing.</li>
+</ul>
+</section>
+
+<section class="outline-card">
+<div class="outline-card-title">Learning Target 2: Researching Scientific and Technical Principles</div>
+<p><strong>Learning Target: Students will research scientific concepts, technical ideas, materials, and prior solutions that influence design success.</strong></p>
+<p class="challenge-list"><strong>Challenge Connections:</strong> Bridge, Glider, Earthquake Tower, MagLev Vehicle, Landing Rover, Water Rocket Distance</p>
+<ul>
+<li>I can identify scientific or technical principles that connect to a design challenge.</li>
+<li>I can gather useful information about materials, forces, motion, structures, stability, energy, or efficiency.</li>
+<li>I can explain how research affects possible design choices.</li>
+<li>I can connect scientific principles to expected performance outcomes.</li>
+<li>I can use research to support early design decisions instead of relying only on guessing.</li>
+</ul>
+</section>
+
+<section class="outline-card">
+<div class="outline-card-title">Learning Target 3: Establishing Criteria and Constraints</div>
+<p><strong>Learning Target: Students will identify and use criteria, constraints, scoring systems, budgets, materials, safety rules, and testing requirements to define what counts as a successful solution.</strong></p>
+<p class="challenge-list"><strong>Challenge Connections:</strong> Bridge, Earthquake Tower, MagLev Vehicle, Landing Rover, Water Rocket Distance, Design Your Own Challenge</p>
+<ul>
+<li>I can distinguish criteria, constraints, and trade-offs in an engineering challenge.</li>
+<li>I can identify required features, limits, rules, budgets, materials, and testing conditions.</li>
+<li>I can describe how scoring systems or success measures affect design priorities.</li>
+<li>I can explain how constraints limit possible solutions while still allowing creativity.</li>
+<li>I can develop measurable success criteria for a self-designed challenge.</li>
+</ul>
+</section>
+<!-- ======================= ES1-II OUTLINE END ======================= -->
+
+<!-- ======================= LEARNING LADDER START ======================= -->
+<h2>Learning Ladder</h2>
+<table class="ladder-table">
+<tr><th>Rung</th><th>I Can Statement</th><th>DOK</th></tr>
+<tr class="dok4"><td>8</td><td>I can independently analyze an unfamiliar engineering challenge, define the problem, research relevant principles, develop criteria and constraints, and justify what evidence would show success.</td><td>DOK 4</td></tr>
+<tr class="dok4"><td>7</td><td>I can evaluate a challenge description, identify missing or unclear requirements, and propose improved criteria, constraints, or success measures.</td><td>DOK 4</td></tr>
+<tr class="dok3"><td>6</td><td>I can explain how scientific principles, criteria, constraints, and scoring systems work together to shape engineering decisions.</td><td>DOK 3</td></tr>
+<tr class="dok3"><td>5</td><td>I can justify which requirements and constraints are most important for a design challenge and explain why they matter.</td><td>DOK 3</td></tr>
+<tr class="dok2"><td>4</td><td>I can connect research findings to design requirements and possible solution strategies.</td><td>DOK 2</td></tr>
+<tr class="dok2"><td>3</td><td>I can identify criteria, constraints, materials, testing conditions, and success measures in a challenge.</td><td>DOK 2</td></tr>
+<tr class="dok1"><td>2</td><td>I can distinguish between a design criterion and a design constraint.</td><td>DOK 1</td></tr>
+<tr class="dok1"><td>1</td><td>I can identify the problem an engineering design must solve.</td><td>DOK 1</td></tr>
+</table>
+<!-- ======================= LEARNING LADDER END ======================= -->
+
+<!-- ======================= PROGRESS TRACKING START ======================= -->
+<h2>Progress Tracking</h2>
+<div class="progress-tracker">
+<div class="progress-box"><strong>Not Yet:</strong> I need support identifying the problem, criteria, constraints, or science behind a challenge.</div>
+<div class="progress-box"><strong>Getting There:</strong> I can identify most requirements but need more practice connecting them to research and design decisions.</div>
+<div class="progress-box"><strong>Got It!:</strong> I can define the problem, explain the constraints, research relevant principles, and describe what success should look like.</div>
+</div>
+<!-- ======================= PROGRESS TRACKING END ======================= -->
+
+<!-- ======================= ASSESSMENT METHODS START ======================= -->
+<h2>Assessment Methods by DOK Level</h2>
+
+<div class="dok-bar">DOK 1 — Rungs 1–2</div>
+<section class="dok-method-card">
+<p><strong>Format: 3–5 minute warm-up, quick check, vocabulary sort, challenge annotation, image prompt, mini-whiteboard response, or exit ticket</strong></p>
+<p><strong>Purpose:</strong> Check whether students can recognize the basic problem of a challenge and identify the difference between criteria, constraints, and general background information.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es1-ii/es1-ii-dok1-1.html">Problem Statement Recognition Check</a> <span class="timing-label">Can Be Assessed During Any Major Challenge</span> – Students identify the core engineering problem from a short challenge description.</li>
+<li><a href="formative/es1-ii/es1-ii-dok1-2.html">Criteria or Constraint Sort</a> <span class="timing-label">Can Be Assessed During Bridge or Landing Rover</span> – Students sort statements into criteria, constraints, materials, safety rules, or scoring information.</li>
+<li><a href="formative/es1-ii/es1-ii-dok1-3.html">Success Measure Match</a> <span class="timing-label">Can Be Assessed During MagLev or Water Rocket Distance</span> – Students match challenge goals to measurable outcomes such as distance, time, load, stability, speed, cost, or consistency.</li>
+<li><a href="formative/es1-ii/es1-ii-dok1-4.html">Science Connection Quick Check</a> <span class="timing-label">Can Be Assessed During Glider or Earthquake Tower</span> – Students identify which scientific ideas are most connected to the challenge.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>Students who struggle here may begin building without understanding what the design must accomplish. They may need support reading challenge documents, separating wants from limits, and recognizing that engineering success depends on measurable evidence.</div>
+</section>
+
+<div class="dok-bar">DOK 2 — Rungs 3–4</div>
+<section class="dok-method-card">
+<p><strong>Format: Exit ticket, annotated challenge sheet, research organizer, requirement checklist, partner check, or short written explanation</strong></p>
+<p><strong>Purpose:</strong> Check whether students can use challenge requirements and research to explain what a design must do and what factors should influence early design choices.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es1-ii/es1-ii-dok2-1.html">Bridge Requirements Breakdown</a> <span class="timing-label">Can Be Assessed During Bridge</span> – Students identify the span, material limits, cost factors, testing method, and success measure that define the bridge problem.</li>
+<li><a href="formative/es1-ii/es1-ii-dok2-2.html">Glider Science-to-Design Organizer</a> <span class="timing-label">Can Be Assessed During Glider</span> – Students connect lift, drag, stability, balance, and mass distribution to possible design features.</li>
+<li><a href="formative/es1-ii/es1-ii-dok2-3.html">Landing Rover Constraint Analysis</a> <span class="timing-label">Can Be Assessed During Landing Rover</span> – Students explain how size limits, material costs, egg accessibility, and passive design rules affect possible solutions.</li>
+<li><a href="formative/es1-ii/es1-ii-dok2-4.html">Water Rocket Distance Success Criteria</a> <span class="timing-label">Can Be Assessed During Water Rocket Distance</span> – Students connect launcher compatibility, fins, nose cone, budget, and measured distance to design priorities.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>Students at this level can usually list requirements, but the assessment reveals whether they understand how those requirements shape design. Weak responses often copy rules without explaining why they matter or how they affect engineering choices.</div>
+</section>
+
+<div class="dok-bar">DOK 3 — Rungs 5–6</div>
+<section class="dok-method-card">
+<p><strong>Format: Constructed response, design brief, research explanation, requirement prioritization, CER-style response, or group whiteboard defense</strong></p>
+<p><strong>Purpose:</strong> Check whether students can explain how scientific principles, criteria, constraints, and scoring systems interact to shape engineering priorities.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es1-ii/es1-ii-dok3-1.html">MagLev Problem Analysis</a> <span class="timing-label">Can Be Assessed During MagLev Vehicle</span> – Students explain how levitation, propulsion, mass, velocity, and momentum affect what the vehicle must accomplish.</li>
+<li><a href="formative/es1-ii/es1-ii-dok3-2.html">Earthquake Tower Requirement Prioritization</a> <span class="timing-label">Can Be Assessed During Earthquake Tower</span> – Students rank design requirements and justify which constraints are most important for surviving simulated seismic activity.</li>
+<li><a href="formative/es1-ii/es1-ii-dok3-3.html">Landing Rover Design Brief</a> <span class="timing-label">Can Be Assessed During Landing Rover</span> – Students write a brief explaining the problem, constraints, user need, success criteria, and key science ideas before building.</li>
+<li><a href="formative/es1-ii/es1-ii-dok3-4.html">Research-to-Design Claim</a> <span class="timing-label">Can Be Assessed During Glider or Water Rocket Distance</span> – Students make a claim about which scientific principle should most influence design and support it with evidence.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>This level shows whether students understand the challenge deeply enough to make purposeful design choices. Strong responses explain priorities, trade-offs, and the relationship between science ideas and the scoring system.</div>
+</section>
+
+<div class="dok-bar">DOK 4 — Rungs 7–8</div>
+<section class="dok-method-card">
+<p><strong>Format: Performance task, design brief critique, challenge proposal, unfamiliar scenario, engineering problem analysis, or capstone planning document</strong></p>
+<p><strong>Purpose:</strong> Check whether students can transfer ES1 skills by defining or improving the structure of an engineering challenge, especially when requirements are incomplete, conflicting, or student-created.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es1-ii/es1-ii-dok4-1.html">Critique a Challenge Description</a> <span class="timing-label">Can Be Assessed After Multiple Major Challenges</span> – Students identify missing criteria, unclear constraints, or weak success measures in a sample engineering challenge.</li>
+<li><a href="formative/es1-ii/es1-ii-dok4-2.html">Unfamiliar Engineering Problem Brief</a> <span class="timing-label">Can Be Assessed Before Design Your Own Challenge</span> – Students analyze a new problem and create a design brief with criteria, constraints, research needs, and success measures.</li>
+<li><a href="formative/es1-ii/es1-ii-dok4-3.html">Design Your Own Challenge Proposal</a> <span class="timing-label">Can Be Assessed During Design Your Own Challenge</span> – Students create the problem statement, criteria, constraints, materials, budget, safety rules, testing method, and scoring system for their own challenge.</li>
+<li><a href="formative/es1-ii/es1-ii-dok4-4.html">Criteria and Constraint Defense</a> <span class="timing-label">Can Be Assessed During Design Your Own Challenge</span> – Students defend why their criteria and constraints are fair, measurable, realistic, and connected to the engineering problem.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>DOK 4 tasks show whether students can think like challenge designers, not just challenge participants. Strong students can define a meaningful problem, set measurable success criteria, anticipate limitations, and justify why the testing system will produce useful evidence.</div>
+</section>
+<!-- ======================= ASSESSMENT METHODS END ======================= -->
+
+<!-- ======================= SUMMATIVE PLAN START ======================= -->
+<h2>Summative Assessment Plan</h2>
+<section class="summative-card">
+<p><strong>Summative Evidence for ES1-II:</strong> Students demonstrate proficiency by producing an engineering artifact that defines a problem, explains relevant research, identifies criteria and constraints, and establishes how success will be measured before or during a design challenge.</p>
+<p><strong>Recommended Artifact Options:</strong></p>
+<ul>
+<li><strong>Design Brief:</strong> A concise engineering document explaining the problem, users, background research, criteria, constraints, and success measures.</li>
+<li><strong>Research Poster:</strong> A visual artifact connecting scientific principles, materials, and design requirements to the challenge.</li>
+<li><strong>Problem Analysis Report:</strong> A written artifact that breaks down the challenge, identifies priorities, and explains how constraints shape possible solutions.</li>
+<li><strong>Client Proposal:</strong> A persuasive artifact written for a specific audience that explains the need, design goals, constraints, and proposed direction.</li>
+<li><strong>Challenge Proposal:</strong> A student-created design challenge including problem statement, criteria, constraints, materials, budget, safety rules, testing protocol, and scoring system.</li>
+<li><strong>Engineering Research Infographic:</strong> A one-page visual explanation of the science, constraints, and success measures behind the challenge.</li>
+</ul>
+<p><strong>Challenge Examples:</strong> Bridge Design Brief, Glider Research Poster, Earthquake Tower Problem Analysis Report, Landing Rover Client Proposal, Water Rocket Distance Engineering Research Infographic, or Design Your Own Challenge Proposal.</p>
+<p><strong>Suggested Rubric Categories:</strong> problem definition, clarity of purpose, identification of criteria and constraints, quality of research, connection between science and design, measurable success criteria, understanding of challenge priorities, and clarity of communication.</p>
+</section>
+<!-- ======================= SUMMATIVE PLAN END ======================= -->
+
+<!-- ======================= HOLISTIC RUBRIC START ======================= -->
+<h2>Holistic Rubric</h2>
+<section class="rubric-card"><div class="rubric-level">A — Highly Proficient</div><p>The student clearly defines the engineering problem, identifies meaningful criteria and constraints, explains relevant scientific or technical principles, and establishes measurable success criteria. The artifact shows strong understanding of how research, requirements, safety, materials, budget, and testing conditions shape design decisions.</p></section>
+<section class="rubric-card"><div class="rubric-level">B — Proficient</div><p>The student defines the engineering problem, identifies most important criteria and constraints, and connects relevant research to design decisions. The artifact is clear and complete enough to guide early design work, though some explanations may lack depth or precision.</p></section>
+<section class="rubric-card"><div class="rubric-level">C — Developing Proficiency</div><p>The student shows partial understanding of the engineering problem and challenge requirements. Some criteria, constraints, or research connections may be missing, vague, or copied without explanation, but there is enough evidence that the student understands the basic purpose and limits of the challenge.</p></section>
+<section class="rubric-card"><div class="rubric-level">Not Yet — Insufficient Evidence</div><p>The student does not yet provide sufficient evidence of ES1-II proficiency. The artifact may lack a clear problem statement, meaningful criteria, accurate constraints, relevant research, or measurable success criteria. The student may need reteaching, guided challenge annotation, research support, or reassessment.</p></section>
+<!-- ======================= HOLISTIC RUBRIC END ======================= -->
+
+</div>
+</body>
+</html>
