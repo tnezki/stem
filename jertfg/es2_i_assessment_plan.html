@@ -1,166 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>ES2-I Assessment Plan</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>STEM I ES2-I Assessment Plan</title>
 <style>
-body{font-family:Segoe UI,Tahoma,sans-serif;max-width:1000px;margin:auto;line-height:1.45;color:#222}
-h1{color:#00003d} h2{color:#00003d;border-left:6px solid #00003d;padding-left:10px}
-.outline-card,.assessment-card,.rubric-card{border:1px solid #999;border-left:7px solid #00003d;padding:12px;margin:12px 0}
-.essential{border:2px solid #00003d;background:#f8fbff;padding:12px}
-table{border-collapse:collapse;width:100%} th,td{border:1px solid #777;padding:8px}
-th{background:#00003d;color:white}
-.dok{background:black;color:white;padding:8px;font-weight:bold;margin-top:18px}
+/* ======================= RESET / PAGE ======================= */
+@page { size: letter; margin: 0.45in; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.45;
+  color: #222;
+  background: #fff;
+  font-size: 11pt;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.container { max-width: 980px; margin: 0 auto; }
+.page-break { page-break-before: always; break-before: page; }
+.unbreakable, .assessment-card, .outline-card, .rubric-card, .ladder-table, .progress-tracker { break-inside: avoid; page-break-inside: avoid; }
+
+/* ======================= HEADER / TITLES ======================= */
+h1 { color: #00003d; font-size: 26pt; line-height: 1.1; margin-bottom: 8px; }
+h2 { color: #00003d; font-size: 17pt; margin: 18px 0 10px 0; border-left: 6px solid #00003d; padding-left: 10px; }
+h3 { color: #004d99; font-size: 13pt; margin: 12px 0 6px 0; }
+p { margin: 6px 0; }
+ul, ol { margin: 6px 0 8px 28px; }
+li { margin-bottom: 4px; }
+.small-note { font-size: 9.5pt; color: #555; font-style: italic; }
+
+/* ======================= OUTLINE CARDS ======================= */
+.outline-card {
+  border: 1px solid #9aa9bd;
+  border-left: 7px solid #00003d;
+  padding: 12px 14px;
+  margin: 12px 0;
+  background: #fff;
+}
+.outline-card-title { color: #00003d; font-weight: 800; font-size: 13.5pt; margin-bottom: 4px; }
+.essential-standard { font-size: 12pt; border: 2px solid #00003d; padding: 12px 14px; margin: 12px 0 16px 0; background: #f8fbff; }
+.challenge-list { color:#333; font-size:10.5pt; margin-top: 5px; }
+.challenge-list strong { color:#00003d; }
+
+/* ======================= TABLES ======================= */
+table { border-collapse: collapse; width: 100%; margin: 10px 0 14px 0; }
+th, td { border: 1px solid #777; padding: 7px 8px; vertical-align: top; }
+th { background: #eaf1fb; color: #00003d; font-weight: 800; text-align: left; }
+.ladder-table th { background: #00003d; color: #fff; }
+.ladder-table .dok4 { background: #eef4ff; }
+.ladder-table .dok3 { background: #f6fbff; }
+.ladder-table .dok2 { background: #fffdf2; }
+.ladder-table .dok1 { background: #ffffff; }
+
+/* ======================= PROGRESS TRACKING ======================= */
+.progress-tracker { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin: 12px 0 18px 0; }
+.progress-box { border: 1px solid #777; padding: 12px; min-height: 0.8in; }
+.progress-box strong { color: #00003d; }
+
+/* ======================= DOK SECTIONS ======================= */
+.dok-bar {
+  background: #000;
+  color: #fff;
+  font-weight: 900;
+  font-size: 15pt;
+  padding: 9px 12px;
+  margin: 22px 0 12px 0;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+.dok-method-card { border: 1px solid #777; padding: 12px 14px; margin: 10px 0 16px 0; background: #fff; break-inside: avoid; page-break-inside: avoid; }
+.assessment-ideas { margin-left: 24px; }
+.assessment-ideas a { color: #005aa0; font-weight: 800; text-decoration: underline; }
+.timing-label { display: inline-block; background: #fff7cf; border: 1px solid #d1c27a; border-radius: 4px; padding: 1px 6px; font-weight: 800; color: #4a3f17; margin-left: 6px; }
+.what-tells { border-left: 5px solid #777; padding-left: 10px; margin-top: 10px; color: #333; }
+
+/* ======================= SUMMATIVE / RUBRIC ======================= */
+.summative-card { border: 2px solid #00003d; padding: 12px 14px; margin: 14px 0; background: #f8fbff; break-inside: avoid; page-break-inside: avoid; }
+.rubric-card { border: 1px solid #777; padding: 12px 14px; margin: 10px 0; }
+.rubric-level { color: #00003d; font-weight: 900; font-size: 12.5pt; }
+
+/* ======================= PRINT CONTROL ======================= */
+@media print {
+  body { font-size: 10.5pt; }
+  h1 { font-size: 24pt; }
+  h2 { font-size: 16pt; }
+  .assessment-card { padding: 10px 12px; }
+}
 </style>
 </head>
 <body>
-<h1>STEM I – ES2-I Assessment Plan</h1>
-
+<div class="container">
+<!-- ======================= ES2-I OUTLINE START ======================= -->
+<h1>STEM I – ES2-I: Develop and Justify Engineering Solutions</h1>
 <h2>Essential Standard</h2>
-<div class="essential">
-Students will generate, evaluate, and justify engineering solutions using evidence, trade-offs, and design criteria.
-</div>
+<div class="essential-standard">Students will generate, evaluate, and justify engineering solutions using evidence, trade-offs, design criteria, and constraints in order to select and defend a solution before and during the build process.</div>
 
-<h2>Learning Targets</h2>
-
-<div class="outline-card">
-<h3>Learning Target 2.1: Generating Multiple Design Ideas</h3>
-<p><strong>Referenced Challenges:</strong> Trebuchet, Zip Line Racer, Water Rocket Hang Time, Design Your Own Challenge</p>
+<section class="outline-card">
+<div class="outline-card-title">Learning Target 1: Generating Multiple Design Ideas</div>
+<p><strong>Learning Target: Students will create multiple possible solutions to an engineering problem and communicate early design thinking through sketches, labels, explanations, and collaboration.</strong></p>
+<p class="challenge-list"><strong>Challenge Connections:</strong> Water Rocket Hang Time, Trebuchet, Zip Line Racer, Design Your Own Challenge</p>
 <ul>
-<li>I can generate multiple solutions to an engineering problem.</li>
-<li>I can create sketches that communicate design ideas.</li>
-<li>I can identify strengths and weaknesses of different concepts.</li>
-<li>I can build upon ideas developed by teammates.</li>
-<li>I can use brainstorming techniques to increase creativity.</li>
+<li>I can generate more than one possible solution to the same engineering problem.</li>
+<li>I can create sketches, diagrams, or models that communicate my design ideas clearly.</li>
+<li>I can label important design features and explain what each feature is intended to do.</li>
+<li>I can identify possible advantages and weaknesses of early design ideas.</li>
+<li>I can build on useful ideas from research, demonstrations, examples, teammates, and previous tests.</li>
 </ul>
-</div>
+</section>
 
-<div class="outline-card">
-<h3>Learning Target 2.2: Evaluating Design Alternatives</h3>
-<p><strong>Referenced Challenges:</strong> Trebuchet, Maximum Distance Racer, Tower Strength</p>
+<section class="outline-card">
+<div class="outline-card-title">Learning Target 2: Evaluating Design Alternatives</div>
+<p><strong>Learning Target: Students will compare possible solutions by using criteria, constraints, evidence, and trade-offs to determine which design is most likely to succeed.</strong></p>
+<p class="challenge-list"><strong>Challenge Connections:</strong> Trebuchet, Tower Strength, Zip Line Racer, Maximum Distance Racer</p>
 <ul>
-<li>I can compare competing design solutions.</li>
-<li>I can identify trade-offs between cost, performance, and reliability.</li>
-<li>I can use criteria and constraints to evaluate solutions.</li>
-<li>I can use evidence to rank design alternatives.</li>
-<li>I can select a design that best meets project goals.</li>
+<li>I can compare multiple design options using the challenge criteria and constraints.</li>
+<li>I can identify trade-offs between performance, cost, reliability, safety, simplicity, and build difficulty.</li>
+<li>I can use a decision matrix or similar tool to evaluate competing design ideas.</li>
+<li>I can explain why one design may be stronger for one goal but weaker for another.</li>
+<li>I can select a design direction based on evidence rather than preference alone.</li>
 </ul>
-</div>
+</section>
 
-<div class="outline-card">
-<h3>Learning Target 2.3: Justifying Engineering Decisions</h3>
-<p><strong>Referenced Challenges:</strong> Hydraulics, Maximum Distance Racer, Design Your Own Challenge</p>
+<section class="outline-card">
+<div class="outline-card-title">Learning Target 3: Justifying Engineering Decisions</div>
+<p><strong>Learning Target: Students will defend design decisions by explaining how evidence, research, constraints, and design priorities support the selected solution.</strong></p>
+<p class="challenge-list"><strong>Challenge Connections:</strong> Trebuchet, Hydraulics, Maximum Distance Racer, Design Your Own Challenge</p>
 <ul>
-<li>I can explain why a design was selected.</li>
-<li>I can defend design decisions using evidence.</li>
-<li>I can justify trade-offs made during planning.</li>
-<li>I can explain how criteria and constraints influenced decisions.</li>
-<li>I can communicate engineering reasoning clearly.</li>
+<li>I can explain why my team selected a specific design direction.</li>
+<li>I can defend design decisions using evidence from research, testing, examples, or engineering reasoning.</li>
+<li>I can justify trade-offs made during planning, such as choosing stability over speed or simplicity over complexity.</li>
+<li>I can explain how criteria and constraints shaped the final design choice.</li>
+<li>I can communicate design reasoning clearly enough that another person can understand and critique the decision.</li>
 </ul>
-</div>
+</section>
+<!-- ======================= ES2-I OUTLINE END ======================= -->
 
+<!-- ======================= LEARNING LADDER START ======================= -->
 <h2>Learning Ladder</h2>
-<table>
+<table class="ladder-table">
 <tr><th>Rung</th><th>I Can Statement</th><th>DOK</th></tr>
-<tr><td>8</td><td>I can design, defend, and critique engineering solutions for unfamiliar challenges while balancing competing criteria and constraints.</td><td>DOK 4</td></tr>
-<tr><td>7</td><td>I can compare multiple design strategies and justify the strongest solution using evidence.</td><td>DOK 4</td></tr>
-<tr><td>6</td><td>I can evaluate engineering trade-offs and defend design decisions.</td><td>DOK 3</td></tr>
-<tr><td>5</td><td>I can justify a design choice using criteria, constraints, and evidence.</td><td>DOK 3</td></tr>
-<tr><td>4</td><td>I can compare alternative solutions using established criteria.</td><td>DOK 2</td></tr>
-<tr><td>3</td><td>I can identify advantages and disadvantages of different designs.</td><td>DOK 2</td></tr>
-<tr><td>2</td><td>I can generate multiple possible solutions to a problem.</td><td>DOK 1</td></tr>
-<tr><td>1</td><td>I can recognize that engineering problems may have multiple valid solutions.</td><td>DOK 1</td></tr>
+<tr class="dok4"><td>8</td><td>I can independently generate, compare, defend, and revise design solutions for an unfamiliar engineering challenge while balancing criteria, constraints, evidence, and trade-offs.</td><td>DOK 4</td></tr>
+<tr class="dok4"><td>7</td><td>I can critique competing design solutions, defend the strongest option, and explain how trade-offs affect the final engineering decision.</td><td>DOK 4</td></tr>
+<tr class="dok3"><td>6</td><td>I can justify a selected design using evidence from research, criteria, constraints, and predicted or observed performance.</td><td>DOK 3</td></tr>
+<tr class="dok3"><td>5</td><td>I can analyze trade-offs between multiple design options and explain why no single design maximizes every goal.</td><td>DOK 3</td></tr>
+<tr class="dok2"><td>4</td><td>I can use criteria and constraints to compare design alternatives and select a reasonable solution.</td><td>DOK 2</td></tr>
+<tr class="dok2"><td>3</td><td>I can identify advantages, disadvantages, and important features of different design ideas.</td><td>DOK 2</td></tr>
+<tr class="dok1"><td>2</td><td>I can generate multiple possible solutions to the same engineering problem.</td><td>DOK 1</td></tr>
+<tr class="dok1"><td>1</td><td>I can recognize that engineering problems can have more than one possible solution.</td><td>DOK 1</td></tr>
 </table>
+<!-- ======================= LEARNING LADDER END ======================= -->
 
+<!-- ======================= PROGRESS TRACKING START ======================= -->
+<h2>Progress Tracking</h2>
+<div class="progress-tracker">
+<div class="progress-box"><strong>Not Yet:</strong> I need support generating more than one idea or explaining why one design may work better than another.</div>
+<div class="progress-box"><strong>Getting There:</strong> I can compare designs but need more practice using criteria, constraints, and evidence to justify decisions.</div>
+<div class="progress-box"><strong>Got It!:</strong> I can generate, evaluate, and defend design choices using evidence and engineering trade-offs.</div>
+</div>
+<!-- ======================= PROGRESS TRACKING END ======================= -->
+
+<!-- ======================= ASSESSMENT METHODS START ======================= -->
 <h2>Assessment Methods by DOK Level</h2>
 
-<div class="dok">DOK 1 — Rungs 1–2</div>
-<div class="assessment-card">
-<p><strong>Purpose:</strong> Determine whether students can generate and recognize multiple engineering solutions.</p>
-<ul>
-<li>Brainstorming Sprint</li>
-<li>Sketch Identification Task</li>
-<li>Criteria vs Constraint Sort</li>
-<li>Design Alternative Recognition Check</li>
-</ul>
-</div>
+<div class="dok-bar">DOK 1 — Rungs 1–2</div>
+<section class="dok-method-card">
+<p><strong>Format: 3–5 minute warm-up, sketch sprint, idea list, quick check, mini-whiteboard response, gallery walk observation, or challenge launch prompt</strong></p>
+<p><strong>Purpose:</strong> Check whether students understand that engineering problems can have multiple possible solutions and can generate more than one idea before choosing a design.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es2-i/es2-i-dok1-1.html">Three-Idea Sketch Sprint</a> <span class="timing-label">Can Be Assessed During Water Rocket Hang Time or Trebuchet Planning</span> – Students sketch three possible design ideas and label one feature that could help each idea succeed.</li>
+<li><a href="formative/es2-i/es2-i-dok1-2.html">Multiple Solutions Check</a> <span class="timing-label">Can Be Assessed During Zip Line Racer Launch</span> – Students identify at least two different ways a device might meet the same challenge goal.</li>
+<li><a href="formative/es2-i/es2-i-dok1-3.html">Design Feature Match</a> <span class="timing-label">Can Be Assessed During Hydraulics Planning</span> – Students match design features to intended purposes, such as stability, control, lift, speed, or strength.</li>
+<li><a href="formative/es2-i/es2-i-dok1-4.html">Idea Source Reflection</a> <span class="timing-label">Can Be Assessed During Any Major Challenge</span> – Students identify whether an idea came from research, a demonstration, a teammate, a previous test, or a previous challenge.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>Students who struggle here may be rushing to the first idea, copying without understanding, or waiting for a teacher-provided solution. They need support with brainstorming routines, sketching expectations, and seeing design as a set of possible choices.</div>
+</section>
 
-<div class="dok">DOK 2 — Rungs 3–4</div>
-<div class="assessment-card">
-<p><strong>Purpose:</strong> Determine whether students can compare solutions and evaluate alternatives.</p>
-<ul>
-<li>Design Comparison Task</li>
-<li>Trebuchet Concept Ranking Activity</li>
-<li>Zip Line Racer Design Analysis</li>
-<li>Decision Matrix Construction Task</li>
-</ul>
-</div>
+<div class="dok-bar">DOK 2 — Rungs 3–4</div>
+<section class="dok-method-card">
+<p><strong>Format: Exit ticket, design comparison, decision matrix, partner critique, annotated sketch, short written response, or planning conference</strong></p>
+<p><strong>Purpose:</strong> Check whether students can compare design alternatives using criteria and constraints rather than personal preference alone.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es2-i/es2-i-dok2-1.html">Trebuchet Design Comparison</a> <span class="timing-label">Can Be Assessed During Trebuchet Planning</span> – Students compare two possible launch-arm or base designs and identify which better addresses distance, stability, cost, and reliability.</li>
+<li><a href="formative/es2-i/es2-i-dok2-2.html">Tower Strength Decision Matrix</a> <span class="timing-label">Can Be Assessed During Tower Strength Planning</span> – Students score design options using criteria such as height, strength, material efficiency, and build feasibility.</li>
+<li><a href="formative/es2-i/es2-i-dok2-3.html">Zip Line Racer Trade-Off Sort</a> <span class="timing-label">Can Be Assessed During Zip Line Racer Planning</span> – Students sort design choices by likely impact on speed, control, safety, and consistency.</li>
+<li><a href="formative/es2-i/es2-i-dok2-4.html">Max Distance Racer Alternative Ranking</a> <span class="timing-label">Can Be Assessed During Maximum Distance Racer Planning</span> – Students rank possible chassis, axle, wheel, or weight-distribution ideas and explain the top choice.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>Students at this level can usually describe designs, but the assessment reveals whether they can compare alternatives using the actual challenge goals. Weak responses often show unweighted opinions, missing constraints, or a failure to recognize trade-offs.</div>
+</section>
 
-<div class="dok">DOK 3 — Rungs 5–6</div>
-<div class="assessment-card">
-<p><strong>Purpose:</strong> Determine whether students can justify engineering decisions using evidence.</p>
-<ul>
-<li>Decision Matrix Defense</li>
-<li>Maximum Distance Racer Design Justification</li>
-<li>Engineering Trade-Off Analysis</li>
-<li>Design Review Board Response</li>
-</ul>
-</div>
+<div class="dok-bar">DOK 3 — Rungs 5–6</div>
+<section class="dok-method-card">
+<p><strong>Format: Constructed response, design review defense, decision matrix explanation, peer critique, trade-off analysis, or CER-style justification</strong></p>
+<p><strong>Purpose:</strong> Check whether students can justify engineering decisions using evidence and explain why a selected solution is stronger than alternatives.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es2-i/es2-i-dok3-1.html">Decision Matrix Defense</a> <span class="timing-label">Can Be Assessed During Trebuchet or Maximum Distance Racer</span> – Students submit a decision matrix and defend why the selected design best fits the scoring system and constraints.</li>
+<li><a href="formative/es2-i/es2-i-dok3-2.html">Trade-Off Explanation</a> <span class="timing-label">Can Be Assessed During Zip Line Racer</span> – Students explain a trade-off their team made, such as speed versus control or propulsion power versus reliability.</li>
+<li><a href="formative/es2-i/es2-i-dok3-3.html">Hydraulics Design Justification</a> <span class="timing-label">Can Be Assessed During Hydraulics</span> – Students explain why their selected mechanism should improve precision, lift capability, control, or stability.</li>
+<li><a href="formative/es2-i/es2-i-dok3-4.html">Rejected Idea Analysis</a> <span class="timing-label">Can Be Assessed During Any Major Challenge</span> – Students choose one rejected design idea and explain why it was not selected, using criteria and constraints as evidence.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>This level shows whether students are making intentional engineering decisions. Strong evidence includes clear comparisons, specific criteria, and reasoning that connects design features to predicted performance. Weak evidence often sounds like “we liked it best” without support.</div>
+</section>
 
-<div class="dok">DOK 4 — Rungs 7–8</div>
-<div class="assessment-card">
-<p><strong>Purpose:</strong> Determine whether students can defend and critique engineering solutions in unfamiliar contexts.</p>
-<ul>
-<li>Critique and Redesign Task</li>
-<li>Engineering Proposal Defense</li>
-<li>Challenge Design Evaluation</li>
-<li>Design Your Own Challenge Planning Task</li>
-</ul>
-</div>
+<div class="dok-bar">DOK 4 — Rungs 7–8</div>
+<section class="dok-method-card">
+<p><strong>Format: Performance task, design review board, critique-and-redesign task, engineering proposal, capstone planning document, or unfamiliar design scenario</strong></p>
+<p><strong>Purpose:</strong> Check whether students can transfer ES2 skills to unfamiliar or student-created contexts by developing alternatives, evaluating trade-offs, and defending a design direction.</p>
+<h3>Assessment Ideas</h3>
+<ol class="assessment-ideas">
+<li><a href="formative/es2-i/es2-i-dok4-1.html">Design Review Board Defense</a> <span class="timing-label">Can Be Assessed During Maximum Distance Racer or Design Your Own Challenge</span> – Students present multiple options, defend the selected design, and respond to critique from peers or teacher.</li>
+<li><a href="formative/es2-i/es2-i-dok4-2.html">Critique and Redesign Task</a> <span class="timing-label">Can Be Assessed After Multiple Major Challenges</span> – Students receive a flawed design plan, identify weaknesses, and propose a better solution with justification.</li>
+<li><a href="formative/es2-i/es2-i-dok4-3.html">Capstone Solution Proposal</a> <span class="timing-label">Can Be Assessed During Design Your Own Challenge</span> – Students generate several possible solutions for their self-designed challenge and defend which one should be built.</li>
+<li><a href="formative/es2-i/es2-i-dok4-4.html">Unfamiliar Challenge Strategy Defense</a> <span class="timing-label">Can Be Assessed After ES2-I Has Been Practiced</span> – Students receive a new engineering problem and create a comparison-based recommendation without building first.</li>
+</ol>
+<div class="what-tells"><strong>What this tells the teacher:</strong><br>DOK 4 tasks show whether students can make and defend design decisions independently. Strong evidence here shows that students are not just completing teacher-directed projects; they are thinking like engineers who can weigh options and defend a plan.</div>
+</section>
+<!-- ======================= ASSESSMENT METHODS END ======================= -->
 
+<!-- ======================= SUMMATIVE PLAN START ======================= -->
 <h2>Summative Assessment Plan</h2>
-<div class="assessment-card">
-<p>Students demonstrate proficiency through engineering artifacts rather than traditional tests.</p>
-
-<h3>Artifact Options</h3>
+<section class="summative-card">
+<p><strong>Summative Evidence for ES2-I:</strong> Students demonstrate proficiency by producing an engineering artifact that shows multiple design ideas, compares alternatives, explains trade-offs, and justifies a selected design using criteria, constraints, research, or evidence.</p>
+<p><strong>Recommended Artifact Options:</strong></p>
 <ul>
-<li>Decision Matrix Report</li>
-<li>Engineering Sketch Portfolio</li>
-<li>Blueprint Package</li>
-<li>Design Review Board Defense</li>
-<li>Engineering Proposal</li>
-<li>Design Justification Video</li>
+<li><strong>Decision Matrix Report:</strong> A written or visual artifact comparing multiple design options using weighted or clearly explained criteria.</li>
+<li><strong>Engineering Sketch Portfolio:</strong> A collection of labeled design sketches showing multiple concepts, key features, strengths, weaknesses, and revisions.</li>
+<li><strong>Blueprint Package:</strong> A technical design artifact showing the selected solution, dimensions, materials, key design features, and rationale.</li>
+<li><strong>Design Review Board Defense:</strong> A short spoken, written, or recorded defense where students explain their options, selection process, and trade-offs.</li>
+<li><strong>Engineering Proposal:</strong> A planning artifact recommending a design direction and defending it using criteria, constraints, research, and predicted performance.</li>
+<li><strong>Design Justification Video:</strong> A brief video walkthrough explaining why the chosen design was selected over alternatives.</li>
 </ul>
+<p><strong>Challenge Examples:</strong> Trebuchet Decision Matrix Report, Zip Line Racer Engineering Sketch Portfolio, Tower Strength Blueprint Package, Maximum Distance Racer Design Review Defense, Hydraulics Engineering Proposal, or Design Your Own Challenge Solution Proposal.</p>
+<p><strong>Suggested Rubric Categories:</strong> variety of design ideas, clarity of sketches or models, use of criteria and constraints, quality of comparison, recognition of trade-offs, strength of evidence, justification of final design, and clarity of engineering communication.</p>
+</section>
+<!-- ======================= SUMMATIVE PLAN END ======================= -->
 
-<h3>Challenge Connections</h3>
-<ul>
-<li>Trebuchet → Decision Matrix Report</li>
-<li>Maximum Distance Racer → Design Review Defense</li>
-<li>Zip Line Racer → Engineering Sketch Portfolio</li>
-<li>Design Your Own Challenge → Full Engineering Proposal</li>
-</ul>
-</div>
-
+<!-- ======================= HOLISTIC RUBRIC START ======================= -->
 <h2>Holistic Rubric</h2>
+<section class="rubric-card"><div class="rubric-level">A — Highly Proficient</div><p>The student generates multiple thoughtful design solutions, evaluates alternatives using clear criteria and constraints, recognizes important trade-offs, and strongly justifies a selected solution using evidence and engineering reasoning. The artifact is organized, specific, and demonstrates flexible thinking that could transfer to unfamiliar or student-created challenges.</p></section>
+<section class="rubric-card"><div class="rubric-level">B — Proficient</div><p>The student generates multiple reasonable design solutions, compares alternatives, identifies relevant trade-offs, and justifies a selected solution using appropriate evidence. The artifact is mostly clear and complete. Some explanations may lack depth or precision, but the design decision is supported by criteria and constraints.</p></section>
+<section class="rubric-card"><div class="rubric-level">C — Developing Proficiency</div><p>The student shows partial understanding of design development and evaluation. The artifact may include more than one idea, but comparison may be basic, evidence may be limited, or the final choice may rely too much on preference. There is enough evidence that the student understands that design decisions should be connected to challenge goals.</p></section>
+<section class="rubric-card"><div class="rubric-level">Not Yet — Insufficient Evidence</div><p>The student does not yet provide sufficient evidence of ES2-I proficiency. The artifact may include only one idea, lack meaningful comparison, ignore criteria or constraints, show weak or missing justification, or fail to explain why the selected solution is appropriate. The student may need reteaching, guided brainstorming, decision-making support, or reassessment.</p></section>
+<!-- ======================= HOLISTIC RUBRIC END ======================= -->
 
-<div class="rubric-card">
-<h3>A — Highly Proficient</h3>
-<p>The student generates innovative solutions, evaluates alternatives using evidence, clearly justifies engineering decisions, and defends choices using criteria, constraints, and data.</p>
 </div>
-
-<div class="rubric-card">
-<h3>B — Proficient</h3>
-<p>The student develops multiple solutions, compares alternatives, and provides reasonable evidence-based justification for design decisions.</p>
-</div>
-
-<div class="rubric-card">
-<h3>C — Developing Proficiency</h3>
-<p>The student can generate solutions and make basic comparisons but struggles to justify decisions using strong evidence.</p>
-</div>
-
-<div class="rubric-card">
-<h3>Not Yet</h3>
-<p>The student provides limited evidence of design evaluation, justification, or engineering reasoning.</p>
-</div>
-
-</body></html>
+</body>
+</html>
